@@ -17,10 +17,10 @@ const Body = () => {
      </div>
      <div className="fontIcons">
      <div className="fontItem">
-     <i className='fas fa-phone-alt'> Call</i>
-     <i class='fas fa-video'> Video</i>
-     <i class='fas fa-smile'> Emoji</i>
-     <i class='fas fa-quote-left'> Quoet</i>
+     <i className="fa fa-circle">Circle</i>
+     <i className="fa fa-circle">Video</i>
+     <i className="fa fa-circle">Television</i>
+     <i className="fa fa-circle">Neutroline</i>
      </div>
      </div>
      

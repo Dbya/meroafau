@@ -53,92 +53,43 @@ img{
     
 }
 .fontItem{
-    /* background-color: aqua; */
-    margin:20px 30px;
+    /* background-color: rgb(160, 202, 202); */
+    margin:10px 15px;
     padding: 20px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
 }
-i{
-    font-size: 16px;
-    color:gray;
+.fontItem i{
+    font-size:16px;
+    color:rgb(131, 123, 123);
 }
 @media (max-width:980px){
     .introContent{
         /* background-color: rgb(216, 145, 52); */
-        margin:80px auto;
+        margin: 0;
+        padding: 0;
         
     }
+    .introContent h1{
+        font-weight: bolder;
+        font-size: 20px;
+    }
+    .introContent p{
+        margin-top: 1rem;
+        font-size:14px;
+    }
+    .introContent button{
+        margin: 1rem;
+    }
+    
     .fontItem{
+        background-color: rgb(160, 202, 202);
         display: block;
+        justify-content: space-between;
         align-items: center;
+       
     }
-}
-/* .mainHeader{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 10%;
-    background-color: rgba(194, 165, 165, 0.911);
-    color: rgb(87, 34, 34);
-}
-.logo{
-    font-family: 'Tai Heritage Pro', serif;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 30px;
-}
-.navList{
-    list-style: none;
-}
-.navList li{
-    display: inline-block;
-    padding: 8px 20px;
-    font-size: 20px;
-  
-    
-}
-.navList li a{
-    text-decoration: none;
-    color:rgb(59, 20, 20) ;
-}
-.navList li a:hover{
-    color: rgb(14, 14, 15);
-    font-size: large;
-    font-weight: bold
-}
 
-
-a button{
-    padding:10px 20px;
-    background-color: rgb(25, 122, 62);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: bold;
-    color: azure;
 }
-a button:hover{
-    padding:15px 22px;
-    background-color: aliceblue;
-    color: rgb(88, 11, 11);
-    border-radius: 40px;
-}
-.checkBtn{
-    color: white;
-    font-size: 30px;
-    float: right;
-    margin-right: 50px;
-    display: none;
-}
-#check{
-    display: none;
-}
-@media (max-width:980px){
-    .logo{
-        
-    }
-    
-} */

@@ -1,42 +1,40 @@
+
 nav{
+    display: flex;
+    background-color: rgb(238, 255, 255);
     position: fixed;
     height: 100px;
     left: 0;
     right: 0;
     top: 0;
-    padding: 0 5%;
-    background-color: rgb(185, 185, 62);
 }
 nav .logo{
-    float: left;
-    width: 20%;
-    height: 100%;
+    flex:2;
     display: flex;
     align-items: center;
-    color: aliceblue;
     font-size: 24px;
+    padding-left: 5%;
     font-weight: bold;
-    
+    cursor: pointer;
+}
+nav .logo:hover{
+    font-size: 26px;
+    color: brown;
 }
 nav .navList{
-    float: left;
-    width: 50%;
-    height: 100%;
+    flex: 6;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-   
 }
 nav .login{
-    float: right;
-   width: 10%;
-   height: 100%;
-   display: flex;
-   align-items: center;
-   justify-content: space-around;
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
 }
-.login .buttonL{
-    margin-right: 20px;
+nav .login .buttonL, .buttonR{
+    margin-right: 11px;
 }
 nav .navList li{
     list-style: none;
@@ -46,6 +44,7 @@ nav .navList a{
     text-decoration: none;
    padding: 1rem;
     font-size: 20px;
+    font-weight: bold;
     /* background-color: rgb(195, 195, 81); */
     color: brown;
     /* border-radius: 20px; */
@@ -54,7 +53,7 @@ nav .navList a:hover{
 font-size: 21px;
 /* background-color: bisque; */
 font-weight: bold;
-color: rgb(14, 15, 15);
+color: rgb(25, 52, 23);
 }
 .login button{
     padding:10px 20px;
@@ -70,7 +69,35 @@ color: rgb(14, 15, 15);
     color: rgb(245, 241, 235);
     background-color: rgb(95, 29, 29);
 }
-nav .icon{
+.checkbtn{
+    
+    font-size: 25px;
+    color: rgb(27, 2, 2);
+    float: right;
+    line-height: 100px;
+    margin-right:50px;
+    cursor: pointer;
+    display: none;
+}
+label i{
+    font-size: 30px;
+    /* display: none; */
+}
+#check{
+    display: none;
+}
+.subClass{
+    display: none;
+}
+nav .navList a:hover ~.subClass{
+    display: block;
+    position: absolute;
+    color: rgb(6, 2, 2);
+   font-weight: bold;
+    font-size: 15px;
+    margin-left: 35px;
+}
+/* nav .icon{
     float: right;
     width: 10%;
     display: flex;
@@ -78,33 +105,39 @@ nav .icon{
    right: 5%;
    top: 50%;
     display: none;
+} */
+@media screen and (max-width:950px){
+       nav .logo{
+           font-size: 18px;
+       }
+       nav .navList a{
+           font-size: 18px;
+       }
+       .login button{
+        padding:8px 15px;
+       }
+    
 }
-@media screen and (max-width:980px){
-       nav .navList{
-           float: none;
-           position: fixed;
-           left: 0;
-           right: 0;
-           top:100px;
-           bottom: 0;
-           flex-direction: column;
-           background-color: beige;
-       }
-       nav .login{
-           float: none;
-           position:fixed;
-           left: 0;
-           right: 0;
-           /* top:100px; */
-           /* flex-direction: column; */
-       }
-       nav .icon{
+@media screen and (max-width:850px){
+    .checkbtn{
         display: block;
-        margin-top: 9%;
-        font-size: 20px;
-        color: white;
-      }
-       nav.icon:checked ~ .navList{
-         display: none;
-      }
+    }
+    nav .navList{
+        position: absolute;
+        margin-top: 100px;
+        width: 100%;
+        height: 100vh;
+        display: block;
+    }
+    nav .login{
+        position: relative;
+       
+        display: block;
+    }
+    #check:checked~ nav .navList {
+        font-size: 300px;
+    }
+    
+
 }
+
