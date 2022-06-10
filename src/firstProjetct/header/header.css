@@ -1,0 +1,110 @@
+nav{
+    position: fixed;
+    height: 100px;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0 5%;
+    background-color: rgb(185, 185, 62);
+}
+nav .logo{
+    float: left;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+nav .navList{
+    float: left;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+nav .login{
+    float: right;
+   width: 10%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+.login .buttonL{
+    margin-right: 20px;
+}
+nav .navList li{
+    list-style: none;
+}
+nav .navList a{
+    display: block;
+    text-decoration: none;
+   padding: 1rem;
+    font-size: 20px;
+    /* background-color: rgb(195, 195, 81); */
+    color: brown;
+    /* border-radius: 20px; */
+}
+nav .navList a:hover{
+font-size: 21px;
+/* background-color: bisque; */
+font-weight: bold;
+color: rgb(14, 15, 15);
+}
+.login button{
+    padding:10px 20px;
+    background-color: rgb(25, 122, 62);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: azure;
+}
+.login button:hover{
+    color: rgb(245, 241, 235);
+    background-color: rgb(95, 29, 29);
+}
+nav .icon{
+    float: right;
+    width: 10%;
+    display: flex;
+   align-items: center;
+   right: 5%;
+   top: 50%;
+    display: none;
+}
+@media screen and (max-width:980px){
+       nav .navList{
+           float: none;
+           position: fixed;
+           left: 0;
+           right: 0;
+           top:100px;
+           bottom: 0;
+           flex-direction: column;
+           background-color: beige;
+       }
+       nav .login{
+           float: none;
+           position:fixed;
+           left: 0;
+           right: 0;
+           /* top:100px; */
+           /* flex-direction: column; */
+       }
+       nav .icon{
+        display: block;
+        margin-top: 9%;
+        font-size: 20px;
+        color: white;
+      }
+       nav.icon:checked ~ .navList{
+         display: none;
+      }
+}

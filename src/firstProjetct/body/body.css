@@ -1,0 +1,144 @@
+.mainBody{
+    display: grid;
+    grid-template-rows: 600px 90px;
+    grid-template-columns: 50% 50%;
+    /* grid-gap:20px; */
+}
+.intro{
+    /* background-color: aqua; */
+    padding:170px 50px;
+}
+.introContent{
+    /* background-color: antiquewhite; */
+    padding: 60px 50px;
+   
+}
+.introContent h1{
+    font-weight: bolder;
+    font-size: 35px;
+}
+.introContent p{
+    margin-top: 2rem;
+    font-size: 20px;
+}
+
+.rightImage{
+    /* background-color: rgb(49, 207, 207); */
+    grid-row: 1/-1;
+    grid-column: 2/3;
+}
+img{
+    width: 100%;
+    height:690px;
+    object-fit: cover;
+}
+.introContent button{
+    margin-top: 2rem;
+    padding:10px 20px;
+    background-color: rgb(25, 122, 62);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: azure;
+}
+.introContent button:hover{
+    color: rgb(245, 241, 235);
+    background-color: rgb(95, 29, 29);
+}
+.fontIcons {
+    /* background-color: brown; */
+    padding :0px 30px;
+    
+}
+.fontItem{
+    /* background-color: aqua; */
+    margin:20px 30px;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+i{
+    font-size: 16px;
+    color:gray;
+}
+@media (max-width:980px){
+    .introContent{
+        /* background-color: rgb(216, 145, 52); */
+        margin:80px auto;
+        
+    }
+    .fontItem{
+        display: block;
+        align-items: center;
+    }
+}
+/* .mainHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: rgba(194, 165, 165, 0.911);
+    color: rgb(87, 34, 34);
+}
+.logo{
+    font-family: 'Tai Heritage Pro', serif;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 30px;
+}
+.navList{
+    list-style: none;
+}
+.navList li{
+    display: inline-block;
+    padding: 8px 20px;
+    font-size: 20px;
+  
+    
+}
+.navList li a{
+    text-decoration: none;
+    color:rgb(59, 20, 20) ;
+}
+.navList li a:hover{
+    color: rgb(14, 14, 15);
+    font-size: large;
+    font-weight: bold
+}
+
+
+a button{
+    padding:10px 20px;
+    background-color: rgb(25, 122, 62);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: azure;
+}
+a button:hover{
+    padding:15px 22px;
+    background-color: aliceblue;
+    color: rgb(88, 11, 11);
+    border-radius: 40px;
+}
+.checkBtn{
+    color: white;
+    font-size: 30px;
+    float: right;
+    margin-right: 50px;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width:980px){
+    .logo{
+        
+    }
+    
+} */
