@@ -96,6 +96,7 @@ nav .navList a:hover ~.subClass{
    font-weight: bold;
     font-size: 15px;
     margin-left: 35px;
+    /* background-color: rgb(187, 168, 168); */
 }
 /* nav .icon{
     float: right;
@@ -118,25 +119,48 @@ nav .navList a:hover ~.subClass{
        }
     
 }
+
 @media screen and (max-width:850px){
+    
+    /* nav .navList, .login{
+        position: fixed;
+        top: 100px;
+        width: 100%;
+        height: 100vh;
+        left:100%;
+        background-color: aliceblue;
+        display: block;
+    } */
+    /* nav .login{
+        position: relative;
+        display: block;
+    } */
+    nav .navList{
+        
+        margin-top: 200px;
+        flex-direction: column;
+        margin-left: -150%;
+    }
+    nav .login{
+        flex-direction: column;
+    }
+    .subClass{
+        flex-direction: column;
+    }
+    
+    /* #check:checked~ nav .navList{
+       margin-top: 300px;
+    } */
+    input[type=checkbox]:checked + nav .logo{
+      font-size: 300px;
+    }
     .checkbtn{
         display: block;
     }
-    nav .navList{
-        position: absolute;
-        margin-top: 100px;
-        width: 100%;
-        height: 100vh;
-        display: block;
-    }
-    nav .login{
-        position: relative;
-       
-        display: block;
-    }
-    #check:checked~ nav .navList {
-        font-size: 300px;
-    }
+    /* #check:checked~ .checkbtn i:before{
+        content: "X";
+    } */
+    
     
 
 }

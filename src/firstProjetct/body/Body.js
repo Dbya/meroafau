@@ -12,6 +12,7 @@ const Body = () => {
        <button>Learn more</button>
        </div>
      </div>
+     
      <div className="rightImage"> 
      <img src="https://th.bing.com/th/id/OIP.yiLz-fQGFSx6QJjKp8ZLzQHaFS?pid=ImgDet&w=800&h=571&rs=1" alt="" />
      </div>

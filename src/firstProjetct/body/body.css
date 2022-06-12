@@ -65,7 +65,18 @@ img{
     font-size:16px;
     color:rgb(131, 123, 123);
 }
-@media (max-width:980px){
+@media (max-width:850px){
+    .mainBody{
+        display: grid;
+        grid-template-rows: 400px 90px;
+        grid-template-columns: 50% 50%;
+        /* grid-gap:20px; */
+    }
+    img{
+        width: 100%;
+        height:490px;
+        object-fit: cover;
+    }
     .introContent{
         /* background-color: rgb(216, 145, 52); */
         margin: 0;
@@ -74,22 +85,27 @@ img{
     }
     .introContent h1{
         font-weight: bolder;
-        font-size: 20px;
+        margin: 0%;
+        font-size: 18px;
     }
     .introContent p{
-        margin-top: 1rem;
-        font-size:14px;
+        margin: 0%;
+        font-size:12px;
     }
     .introContent button{
-        margin: 1rem;
+        margin: 0%;
     }
     
     .fontItem{
-        background-color: rgb(160, 202, 202);
+        /* background-color: rgb(160, 202, 202);
         display: block;
         justify-content: space-between;
         align-items: center;
-       
+        */
+        margin: 0%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
     }
 
 }
