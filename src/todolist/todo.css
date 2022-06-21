@@ -1,0 +1,137 @@
+.main{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(241, 234, 223);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo{
+    height: 500px;
+    width: 400px;
+    /* border: 1px solid rgb(104, 102, 99); */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background-color: aliceblue !important;
+    border-radius: .8rem;
+    box-shadow: 5px 10px 8px #888888,5px 10px 8px #5d5a5a;
+    
+}
+h1{
+    text-decoration: underline;
+    color: red;
+}
+p{
+    font-size: 24px;
+}
+strong{
+    color: green;
+}
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    width: 100%;
+    height: 80px;
+    /* background-color: rgb(31, 81, 124); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+form input{
+    width: 50%;
+    height:40px ;
+    border: none;
+    font-size: 15px;
+    border-radius: .5rem;
+    box-shadow: 2px 5px 5px #888888
+    /* -webkit-box-shadow: inset 0px 3px 3px 1px #a294c9e4;
+  box-shadow: inset 0 3px 3px 0px #000000; */
+  
+    
+}
+input:focus{
+    outline: none;
+   }
+form button{
+    height: 40px;
+    width: 20%;
+    font-size: 18px;
+    margin-left: 1rem;
+    border: none;
+    border-radius: 1.3rem;
+    background-color: rgb(63, 188, 63);
+}
+form button:hover{
+    background-color: rgb(10, 65, 50);
+    color: whitesmoke;
+    font-size: 18px;
+}
+/* .myresult{
+    background-color: rgb(205, 119, 13) !important;
+    
+} */
+.myresult{
+    height: 58%;
+    /* background-color: #888888; */
+   
+    overflow:auto;
+    /* overflow-y: scroll; */
+    /* scroll-behavior: smooth; */
+    
+}
+.myresult .result{
+    text-transform: capitalize;
+    display: flex;
+    background-color: rgb(196, 144, 92) !important;
+    margin-top: 1rem;
+    height: 50px;
+   font-size: 15px
+   
+   
+
+}
+.myresult h3{
+    margin-right: 1rem;
+    flex: 4;
+    align-content: flex-start;
+}
+.myresult button{
+    margin-left: 0.8rem;
+    /* background-color: rgba(46, 188, 96, 0.918); */
+    height: 35px;
+    border: none;
+    color: whitesmoke;
+    font-weight: bold;
+    border-radius: 0.8rem;
+}
+.result .del{
+    background-color: rgb(165, 37, 37);
+    width: 18%;
+}
+.result .edi{
+    background-color: rgb(49, 173, 67);
+    width: 18%;
+}
+.myresult button:hover{
+    color: rgb(20, 20, 19);
+    background-color: rgb(209, 40, 54);
+}
+.myresult .result:nth-child(odd) {
+    background-color: #9dd0d0 !important;
+  }
+.myresult .result:nth-child(even) {
+    background-color: #51b894 !important;
+}
+.result input{
+    border: none;
+    border-radius: 1rem;
+    height: 35px;
+   
+}

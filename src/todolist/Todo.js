@@ -53,10 +53,13 @@ const Todo = () => {
     
     
   return (
+    <div className="main">
    <div className="todo">
-    <form action="" onSubmit={formSubmit}>
+   <h1 className='mt-4'>TODO LIST</h1>
+   <p className='mt-4'>Create your <strong>Shopping List</strong></p>
+    <form className='mt-4'  action="" onSubmit={formSubmit}>
     <input type="text" value={inputData} onChange={handleChange}/>
-    <button type='submit'  > <i className="fa fa-plus-square-o"></i></button> <br />
+    <button type='submit'  > ADD</button> <br />
     </form> <br />
 
 
@@ -65,11 +68,11 @@ const Todo = () => {
         return(
         <div className="result" key={inputData.id} >
         {todoediting === inputData.id ? 
-            (<input type="text" onChange={(e)=>setEditingtext(e.target.value)}  value={editingtext}/>):(<h3>{ inputData.text }</h3>)}
+            (<input className='text' type="text" onChange={(e)=>setEditingtext(e.target.value)}  value={editingtext}/>):(<h3>{ inputData.text }</h3>)}
         
         
-        <button onClick={()=>{deleteMe(inputData.id)}}><i className="fa fa-trash" ></i></button>
-        {todoediting === inputData.id?(<button onClick={()=>editMe(inputData.id)}>update</button>):(<button onClick={()=>{setTodoediting(inputData.id)}}>Edit</button>)}
+        <button  className='del' onClick={()=>{deleteMe(inputData.id)}}>Delete</button>
+        {todoediting === inputData.id?(<button  className='edi' onClick={()=>editMe(inputData.id)}>update</button>):(<button className='edi' onClick={()=>{setTodoediting(inputData.id)}}>Edit</button>)}
         
         
         </div>
@@ -77,6 +80,7 @@ const Todo = () => {
     })}
     
     </div>
+   </div>
    </div>
 
    
