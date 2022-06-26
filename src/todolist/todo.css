@@ -78,7 +78,8 @@ form button:hover{
     
 } */
 .myresult{
-    height: 58%;
+    height: 57%;
+    
     /* background-color: #888888; */
    
     overflow:auto;
@@ -89,7 +90,7 @@ form button:hover{
 .myresult .result{
     text-transform: capitalize;
     display: flex;
-    background-color: rgb(196, 144, 92) !important;
+    /* background-color: rgb(196, 144, 92) !important; */
     margin-top: 1rem;
     height: 50px;
    font-size: 15px
@@ -124,10 +125,10 @@ form button:hover{
     background-color: rgb(209, 40, 54);
 }
 .myresult .result:nth-child(odd) {
-    background-color: #9dd0d0 !important;
+    background-color: rgb(180, 189, 197) !important;
   }
 .myresult .result:nth-child(even) {
-    background-color: #51b894 !important;
+    background-color: rgb(154, 171, 191) !important;
 }
 .result input{
     border: none;
