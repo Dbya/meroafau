@@ -7,11 +7,13 @@ const [item,setItem] = useState({
     time:''
 })
  const [list,setList]=useState([ ])
+
 const handleChange=(e)=>{
     const name = e.target.name;
     const value = e.target.value;
     console.log(name,value);
     setItem({...item, [name]:value,});
+    console.log(item)
 }
 // let current = new Date();
 // let cDate = current.getFullYear() + '-' + (current.getMonth() + 1) + '-' + current.getDate();
@@ -19,10 +21,11 @@ const handleChange=(e)=>{
 const addMe =(e)=>{
     e.preventDefault();
     const newlist = { ...item, id: new Date().getTime().toString()}
-    if(item===(" ")){
+    if(item==null){
         alert("oops no any item")
     }else{
-        setList([...list,newlist]);
+        // setList([...list,newlist]);
+        list.push(newlist);
         console.log(list);
         setItem({date:'',time:''})
     }

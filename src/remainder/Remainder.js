@@ -28,9 +28,9 @@ const Remainder = () => {
     //     text:item,
         
     // }
-  
+    const newlist = { ...item, id: new Date().getTime().toString()}
     if(cDate){
-        list.push(data);
+        list.push(newlist);
         reset();
         console.log(list)
     }
