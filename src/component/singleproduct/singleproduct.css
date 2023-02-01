@@ -1,0 +1,10 @@
+.mysingleproduct{
+   display: grid;
+   grid-template-columns: 60% 25%;
+}
+.othercontent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}

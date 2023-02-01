@@ -1,0 +1,51 @@
+export const alldata =[
+  {
+    id:1,
+    name:"shoes",
+    image:"https://images.dsw.com/is/image/DSWShoes/509700_224_ss_01?impolicy=colpg&imwidth=400&imdensity=1",
+    feature:"true",
+    category:"cold Weather boot"
+  },
+  {
+    id:2,
+    name:"shoes",
+    image:"https://images.dsw.com/is/image/DSWShoes/518374_001_ss_01?impolicy=colpg&imwidth=400&imdensity=1",
+    feature:"true",
+    category:"cold Weather boot"
+  },
+  {
+    id:3,
+    name:"shoes",
+    image:"https://images.dsw.com/is/image/DSWShoes/398210_010_ss_01?impolicy=colpg&imwidth=400&imdensity=1",
+    feature:"true",
+    category:"cold Weather boot"
+  },
+  {
+    id:4,
+    name:"shoes",
+    image:"https://images.dsw.com/is/image/DSWShoes/515160_026_ss_01?impolicy=colpg&imwidth=400&imdensity=1",
+    feature:"true",
+    category:"Man"
+  },
+  {
+    id:5,
+    name:"shoes",
+    image:"https://images.dsw.com/is/image/DSWShoes/538945_160_ss_01?impolicy=colpg&imwidth=400&imdensity=1",
+    feature:"true",
+    category:"Man"
+  },
+  {
+    id:6,
+    name:"shoes",
+    image:"https://images.dsw.com/is/image/DSWShoes/481817_805_ss_01?impolicy=colpg&imwidth=400&imdensity=1",
+    feature:"true",
+    category:"female"
+  },
+  {
+    id:7,
+    name:"shoes",
+    image:"https://images.dsw.com/is/image/DSWShoes/498237_022_ss_01?impolicy=colpg&imwidth=400&imdensity=1",
+    feature:"true",
+    category:"female"
+  },
+]

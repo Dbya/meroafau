@@ -1,0 +1,23 @@
+.sortingitem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid gray;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 1.5rem;
+}
+.listgrid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.listviews{
+    margin-left: 1rem;
+}
+.active{
+    background-color: aquamarine;
+}
+.gridcolor{
+    background-color: aliceblue;
+}

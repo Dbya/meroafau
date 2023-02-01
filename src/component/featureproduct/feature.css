@@ -1,0 +1,8 @@
+/* .feproducts Link{
+   display: grid;
+   grid-template-columns: 50% 50%;
+} */
+.p{
+   display: grid;
+   grid-template-columns: 30% 30% 30%;
+}
