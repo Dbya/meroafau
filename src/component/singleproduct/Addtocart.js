@@ -4,7 +4,7 @@ import './addtocart.css'
 const Addtocart = ({ myproducts}) => {
  const {stock }= myproducts;
 
-const [amount,setAmount]=useState(1);
+const [amount,setAmount]=useState(2);
 
 const increase =()=>{
  amount < stock ? setAmount(amount + 1) : setAmount(stock)
