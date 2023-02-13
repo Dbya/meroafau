@@ -1,8 +1,12 @@
 import React, {useState} from 'react'
 import { NavLink } from 'react-router-dom';
+import { useGlobalcartContext } from '../../context/Cartcontext';
 import './addtocart.css'
+import Cartamount from './Cartamount';
 const Addtocart = ({ myproducts}) => {
- const {stock }= myproducts;
+const {Addingtocart}=useGlobalcartContext();
+
+ const {id ,stock }= myproducts;
 
 const [amount,setAmount]=useState(2);
 
@@ -15,11 +19,8 @@ const decrease =()=>{
 
   return (
     <div className="addtocart">
-    <div className="addsub">
-    <button onClick={decrease} > - </button>
-    <p>{amount}</p>
-    <button onClick={increase} > + </button>
-    </div>
+    
+    <Cartamount amount={amount} increase={increase} decrease={decrease} />
     <NavLink to="/cart" onClick={()=> Addingtocart(id , amount , myproducts)} >
      <button>ADD to Cart</button>
     </NavLink>
