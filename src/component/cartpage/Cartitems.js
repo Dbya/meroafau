@@ -1,9 +1,10 @@
 import React from 'react'
 import Table from 'react-bootstrap/Table';
+import { useGlobalcartContext } from '../../context/Cartcontext';
 import Cartamount from '../singleproduct/Cartamount'; 
 
 const Cartitems = ({id,title,thumbnail,amount,price}) => {
-
+   const {removeProduct}= useGlobalcartContext();
     const increase =()=>{
         // amount < stock ? setAmount(amount + 1) : setAmount(stock)
        }
@@ -20,10 +21,11 @@ const Cartitems = ({id,title,thumbnail,amount,price}) => {
       <td>{price}</td>
       <td>{ <Cartamount amount={amount} increase={increase} decrease={decrease} />}</td>
       <td>total rs:{price*amount}</td>
-      <td><button>delete</button> </td>
+      <td><button onClick={()=> removeProduct(id)}>delete</button> </td>
     </tr>
     </tbody>
     </Table>
+  <hr />
     </div>
   )
 }
