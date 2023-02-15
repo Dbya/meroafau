@@ -2,7 +2,29 @@
    display: grid;
    grid-template-columns: 50% 50%;
 } */
-.p{
-   display: grid;
-   grid-template-columns: 30% 30% 30%;
+.feature-grid {
+  display: grid;
+  grid-template-columns: 22% 22% 22% 22%;
+  justify-content: space-around;
+  gap: 1rem 0;
+}
+.feature-heading {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.feature-product-container {
+  width: 100%;
+}
+.feature-image-container {
+  /* width:50%; */
+  height: 15rem;
+}
+.feature-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.feature-description-container{
+   padding:.5rem;
 }

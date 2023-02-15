@@ -4,9 +4,6 @@ import axios from "axios";
 import Featureproduct from '../featureproduct/Featureproduct';
 const Home = () => {
  
-
- 
-
   return (
     <div>
     <Featureproduct />

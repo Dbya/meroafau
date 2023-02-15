@@ -1,0 +1,19 @@
+div.container-fluid{
+    width:85%;
+    margin:auto;
+}
+.container-fluid .navbar{
+    box-shadow:none;
+}
+.container-fluid .navbar a{
+    color:black;   
+    font-weight:600; 
+}
+div .navbar-light .navbar-toggler-icon {
+    background-image: block;
+}
+.navbar-nav a{
+    text-decoration: none;
+    margin: auto 1rem;
+    color: black;
+}

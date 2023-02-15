@@ -5,18 +5,18 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import {Link} from 'react-router-dom';
-import './header.css'
+import './navLink.css'
 
-const Header = () => {
+const NavLink = () => {
   return (
     <div>
     <Navbar bg="light" expand="lg">
     <Container fluid>
-      <Navbar.Brand> <Link to='/'>The online Shoes Store</Link> </Navbar.Brand>
+      <Navbar.Brand className="navbar"> <Link to='/'>ShopMart</Link> </Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarScroll" />
       <Navbar.Collapse id="navbarScroll">
         <Nav
-          className=" m-auto mr-1"
+          className=" m-auto  "
           style={{ maxHeight: '100px' }}
           navbarScroll
         >
@@ -46,4 +46,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default NavLink

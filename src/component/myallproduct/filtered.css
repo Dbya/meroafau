@@ -1,0 +1,26 @@
+.filtered{
+    display: flex;
+    flex-direction: column;
+    margin:1rem 0;
+    padding:.4rem;
+    text-align: center;
+}
+.mycatdata{
+    display: grid;
+    grid-template-columns: 90%;
+    gap:.5rem;
+    word-wrap: break-word;
+}
+.mycatdata button{
+    border:none;
+    background-color:cadetblue;
+    border-radius: 1rem;
+}
+.mycatdata button p{
+    margin:0;
+    padding:.4rem;
+}
+.mycatdata button:hover{
+    background-color:green;
+
+}

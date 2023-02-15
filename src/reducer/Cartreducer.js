@@ -1,6 +1,4 @@
 
-
-
 const Cartreducer = (state,action) => {
  if(action.type=== "ADDINGCART"){
    let {id , amount , myproducts}=action.payload;

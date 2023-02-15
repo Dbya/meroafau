@@ -52,11 +52,6 @@ const getsingleProduct = async (url)=>{
   
 }
 
-
-
-  
-
-
   return <AppContext.Provider value={{ ...state , getsingleProduct }} >
    {children}
   </AppContext.Provider>

@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import {Routes,Route} from 'react-router-dom';
-import Header from './component/navbar/Header';
+import NavLink from './component/navLink/NavLink';
 import Home from './component/home/Home';
 import Contact from './component/contact/Contact';
 import Footer from './component/footer/Footer';
@@ -14,7 +14,7 @@ import Allproduct from './component/myallproduct/Allproduct';
 function App() {
   return (
     <div className="App">
-   <Header />
+   <NavLink />
    <Routes>
    <Route path='/' exact  element={<Home />} />
    <Route path='/Contact' element={<Contact />} />
