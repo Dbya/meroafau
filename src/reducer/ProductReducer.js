@@ -6,14 +6,12 @@ const productReducer =(state , action )=>{
         return{
             ...state,
             isLoading:true,
-           
         }
         break;
        
         case "Give_All_Data":
             const featureData= action.payload.filter((curElem)=>{
                 return curElem.rating < 4.1 ;
-               
             })
             return {
                 ...state,
@@ -52,6 +50,7 @@ const productReducer =(state , action )=>{
                 }
                 break;   
         
+        
                 case "Give_My_Single_Error":
                     return{
                         ...state,
@@ -59,9 +58,7 @@ const productReducer =(state , action )=>{
                         isError:true,
                        
                     }
-                    break;
-
-   
+                    break;   
        default:
       return state
       

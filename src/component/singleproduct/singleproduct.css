@@ -1,10 +1,26 @@
-.mysingleproduct{
-   display: grid;
-   grid-template-columns: 60% 25%;
+.mysingleproduct {
+  display: grid;
+  grid-template-columns: 60% 25%;
+  padding: 3rem 0;
 }
-.othercontent{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
+.othercontent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap:1rem;
+}
+.othercontent svg{
+    color:green;
+}
+.product-title,.product-price {
+  font-weight: bold;
+}
+.star {
+    padding:.5rem 0;
+}
+.product-prev{
+    color:red;
+}
+.product-price{
+    color:green;
 }

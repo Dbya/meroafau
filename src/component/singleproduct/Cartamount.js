@@ -1,4 +1,5 @@
 import React from 'react'
+import "./cartAmount.css"
 
 const Cartamount = ({amount,decrease,increase}) => {
   return (

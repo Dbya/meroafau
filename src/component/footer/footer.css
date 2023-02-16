@@ -1,0 +1,137 @@
+.footer {
+	width: 100%;
+	background-color: #111111;
+	color: rgb(150, 133, 133);
+    padding:1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-wrapper {
+	gap: 2rem;
+	place-items: start;
+	place-content: center center;
+	grid-template-columns: repeat(3, 1fr);
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1280px;
+    display: grid;
+    margin:auto;
+}
+
+.footer .app-info {
+	flex-shrink: 0;
+ 
+}
+
+.footer .app-info, .footer .app-author-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footer .app-author-info {
+	gap: 1rem;
+}
+
+.footer .icon {
+	pointer-events: all;
+}
+
+.footer .list-head {
+	padding: 0;
+}
+
+.footer .list-item-head:hover,
+.footer .list-item:hover,
+.footer .list-head {
+	background-color: transparent;
+}
+
+.list-item.flex-row {
+	gap: .5rem .7rem;
+}
+
+.social-links {
+	gap: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+
+.social-links .icon {
+	font-size: 1.1rem;
+}
+.footer-item{
+    list-style-type:none;
+    text-align: center;
+    margin:auto;
+    padding:0;
+}
+.list-head{
+    font-size: 1.4rem;
+}
+.list-item ul{
+    list-style-type:none;
+}
+.footer-quick-link{
+    color:white;
+}
+.footer-quick-link:hover{
+    color:rgb(171, 162, 162);
+    font-size:1rem;
+}
+.list-head{
+    font-size:1.5rem;
+    font-weight: bold;
+}
+.footer-item2{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.footer .brand {
+	min-height: max-content;
+	line-height: 1.2;
+	height: max-content;
+}
+
+.enterprise-name {
+	font-size: 0.7rem;
+}
+
+.footer-quick-links {
+	place-self: center;
+}
+
+.copyright-section {
+	grid-column: 1/ -1;
+	width: 100%;
+	gap: .5rem;
+	border-top: 1px solid gray;
+	color: gray;
+    
+}
+
+.footer .link-hover:hover {
+	color: gray;
+}
+
+.author-portfolio-link a {
+	width: max-content;
+}
+
+.footer-contact {
+	place-self: center;
+}
+.footer a, .footer p, .footer li{
+    color:white;
+}

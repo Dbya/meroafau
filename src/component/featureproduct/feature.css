@@ -2,6 +2,9 @@
    display: grid;
    grid-template-columns: 50% 50%;
 } */
+.feature-whole-container{
+  margin: 1rem auto 8rem auto;
+}
 .feature-grid {
   display: grid;
   grid-template-columns: 22% 22% 22% 22%;
@@ -10,9 +13,14 @@
 }
 .feature-heading {
   text-align: center;
-  margin: 2rem 0;
+  margin: 2rem 0 1rem 0 ;
 }
-
+.feature-paragraph{
+  text-align:center;
+  font-size:1.5rem;
+  font-weight:500;
+  margin:1rem auto;
+}
 .feature-product-container {
   width: 100%;
 }
@@ -27,4 +35,11 @@
 }
 .feature-description-container{
    padding:.5rem;
+}
+.feature-btn{
+  /* width:100%; */
+}
+.hero-cta{
+  text-align:center;
+
 }

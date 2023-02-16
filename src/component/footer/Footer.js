@@ -1,92 +1,138 @@
-import React from 'react'
-import {
-  MDBFooter,
-  MDBContainer,
-  MDBIcon,
-  MDBCol,
-  MDBRow,
-  MDBBtn
-} from 'mdb-react-ui-kit';
+import React from "react";
+import { Link } from "react-router-dom";
 
-
+import "./footer.css";
 
 const Footer = () => {
-    
-  return (
-    <div>
-    <MDBFooter className='text-center' color='white' bgColor='dark'>
-    <MDBContainer className='p-4'>
-      <section className='mb-4'>
-        <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-          <MDBIcon fab icon='facebook-f' />
-        </MDBBtn>
+	return (
+		<footer
+			className="footer"
+			id="footer"
+		>
+			<div className="footer-wrapper">
+				<div className="app-author-info  grid-item">
+					<div className="app-info ">
+						<Link
+							to="/"
+							className="brand-logo list-head"
+						>
+					Shopmart
+						</Link>
+						<p className="text-sm mt-0-5">
+					A shop where you will get your products
+						</p>
+					</div>
 
-        <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-          <MDBIcon fab icon='twitter' />
-        </MDBBtn>
+					<div className="social-links">
+						<a
+							href="/#"
+							target="_blank"
+							className="link-hover"
+						>
+							<span className="icon">
+								<i className="fab fa-twitter text-lg"></i>
+							</span>
+						</a>
+						<a
+							href="/#"
+							target="_blank"
+							className="link-hover"
 
-        <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-          <MDBIcon fab icon='google' />
-        </MDBBtn>
+						>
+							<span className="icon">
+								<i className="fab fa-github text-lg"></i>
+							</span>
+						</a>
+						<a
+							href="/#"
+							target="_blank"
+							className="link-hover"
 
-        <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-          <MDBIcon fab icon='instagram' />
-        </MDBBtn>
+						>
+							<span className="icon">
+								<i className="fab fa-linkedin text-lg"></i>
+							</span>
+						</a>
+						<a
+							href="/#"
+							className="link-hover"
+							target="_blank"
+						>
+							<span className="icon">
+								<i className="fas fa-envelope text-lg"></i>
+							</span>
+						</a>
+					</div>
+				</div>
+				<ul className="footer-item ">
+					<li className="list-head text-lg">Quick Links</li>
 
-      </section>
+					<li className="list-item">
+						<ul className="list list-stacked list-style-none">
+							<li className="list-item">
+								<Link
+									to="/profile"
+									className="footer-quick-link"
+								>
+									Home
+								</Link>
+							</li>
+							<li className="list-item">
+								<Link
+									to="/products"
+									className="footer-quick-link"
+								>
+									Product
+								</Link>
+							</li>
+							<li className="list-item">
+								<Link to="/cart" className="footer-quick-link">
+								Contact
+								</Link>
+							</li>
+							<li className="list-item">
+								<Link
+									to="/wishlist"
+									className="footer-quick-link"
+								>
+									Cart
+								</Link>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul className="footer-item2 ">
+					<li className="list-head text-lg">Contact</li>
+					<li className="list-item flex-row">
+						<address className="text-sm">
+						Butwal
+						</address>
+					</li>
+					<li className="list-item text-sm flex-row mt-1">
+						<span className="icon">
+							<i className="fa-solid fa-phone text-sm flex-align-center"></i>
+						</span>
+						<span className="text-sm ml-0-25">+977 1234567890</span>
+					</li>
+				</ul>
 
- 
-      <section className='mb-4'>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum repellat quaerat
-          voluptatibus placeat nam, commodi optio pariatur est quia magnam eum harum corrupti dicta, aliquam
-          sequi voluptate quas.
-        </p>
-      </section>
+				<div className="mt-1 pt-2 copyright-section text-center">
+				
+					<p className="author-portfolio-link">
+						<span>
+						
+							<a
+								href="/#"
+								target="_blank"
+							>
+								© Shopmart 2023
+							</a>
+						</span>
+					</p>
+				</div>
+			</div>
+		</footer>
+	);
+};
 
-      <section className=''>
-        <MDBRow className='d-flex justify-content-center'>
-          <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-            <h5 className='text-uppercase'>Links</h5>
-
-            <ul className='list-unstyled mb-0 d-flex flex-row justify-content-between'>
-              <li>
-                <a href='#!' className='text-white'>
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href='#!' className='text-white'>
-                  About us
-                </a>
-              </li>
-              <li>
-                <a href='#!' className='text-white'>
-                  Services
-                </a>
-              </li>
-              <li>
-                <a href='#!' className='text-white'>
-                  Help
-                </a>
-              </li>
-            </ul>
-          </MDBCol>
-
-        </MDBRow>
-      </section>
-    </MDBContainer>
-
-    <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-      © 2023 Copyright:
-      <a className='text-white' href='/#'>
-        ShopMart
-      </a>
-    </div>
-  </MDBFooter>
-   
-    </div>
-  )
-}
-
-export default Footer
+export default Footer;
