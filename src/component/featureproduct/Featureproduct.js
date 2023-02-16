@@ -43,7 +43,7 @@ const Featureproduct = () => {
       <div className="feature-btn">
       <h6 className="hero-cta mt-1">
 					<Link
-						to="/products"
+						to="/product"
 						className="btn btn-primary btn-text-icon py-0-25 px-0-5 mt-1"
 					>
 						Shop Now!

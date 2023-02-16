@@ -19,7 +19,7 @@ const Footer = () => {
 					Shopmart
 						</Link>
 						<p className="text-sm mt-0-5">
-					A shop where you will get your products
+						One shop for you to find all of your products
 						</p>
 					</div>
 
