@@ -36,7 +36,7 @@ const validationSchema=Yup.object({
     name:Yup.string().matches(/^[A-Za-z ]*$/, 'only letters no number').required('required').max(10).min(3),
     email:Yup.string().email('invalid email').required('required'),
     channel:Yup.string().required('required'),
-    // date:Yup.string().required('req').min(new Date().toDateString(),'please choose present/future date'),
+    date:Yup.string().required('req'),
    
 
 

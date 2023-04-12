@@ -7,9 +7,9 @@ export const ContextList=createContext();
 
 export const ContextListProvider=(props)=>{
      const [tasks,setTasks]=useState([
-        {title:'dibbya',id:0},
-        {title:'Narine',id:1},
-        {title:'goods',id:2},
+        {title:'Dibbya',id:0},
+        {title:'Poudel',id:1},
+        {title:' BSc.CSIT',id:2},
 
      ])
      const[edit,setEdit]=useState(null)

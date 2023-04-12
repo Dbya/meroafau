@@ -8,8 +8,8 @@ const Task = ({task}) => {
   return (
     <div className='mt-4'>
     <h1>{task.title}</h1>
-    <button onClick={()=>removeUser(task.id)}>delete</button>
-    <button onClick={()=>findItem(task.id)}>Edit</button>
+    <button className='btn btn-danger' style={{width:90 , height:30}} onClick={()=>removeUser(task.id)}>delete</button>
+    <button className='btn btn-success'  style={{width:90,height:30,marginLeft:10}}onClick={()=>findItem(task.id)}>Edit</button>
     </div>
   )
 }
